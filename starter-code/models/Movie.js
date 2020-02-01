@@ -11,4 +11,6 @@ const movies = new mongoose.Schema(
   }
 );
 
+// Aquí genero una nueva colección llamada "Movie" -> en compass será "Movies"
+
 module.exports = mongoose.model("Movie", movies);
