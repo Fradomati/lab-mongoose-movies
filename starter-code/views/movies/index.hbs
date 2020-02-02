@@ -1,0 +1,15 @@
+<h2>Movies</h2>
+{{#each movies}}
+<div>
+  <div id="box-name">
+    <a href="/movies/{{_id}}" class="name">-> {{title}}</a>
+    <div class="options">
+      <a href="/movies/{{this._id}}/delete" class="remove">ELIMINAR</a>
+      <a href="/movies/{{this._id}}/edit" class="edit">EDITAR</a>
+    </div>
+  </div>
+
+  {{/each}}
+
+  <p><a href="/movies/new">Agregar una nueva Película </a></p>
+</div>
